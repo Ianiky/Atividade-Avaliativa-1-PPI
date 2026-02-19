@@ -72,7 +72,7 @@ server.get('/calculadora', (req, res) => {
     const anoNum = parseInt(anoContratacao);
     const matriculaNum = parseInt(matricula);
 
-    if (isNaN(idadeNum) || idadeNum < 18 || idadeNum > 99) {
+    if (isNaN(idadeNum) || idadeNum < 16 || idadeNum > 99) {
     res.write(`
         <h1>Erro</h1>
         <p>Idade inválida! Informe uma idade entre 18 e 99 anos.</p>
@@ -101,7 +101,7 @@ if (isNaN(salarioNum) || salarioNum <= 0) {
 // Ano de contratação inválido
 const anoAtual = new Date().getFullYear();
 
-if (isNaN(anoNum) || anoNum > anoAtual || anoNum < 1900) {
+if (isNaN(anoNum) || anoNum > anoAtual || anoNum < 1960) {
     res.write(`
         <h1>Erro</h1>
         <p>Ano de contratação inválido!</p>
@@ -124,8 +124,8 @@ if (isNaN(matriculaNum) || matriculaNum <= 0) {
 
     const tempoEmpresa = anoAtual - anoNum;
 
-    // 18 a 39 anos
-    if (idadeNum >= 18 && idadeNum <= 39) {
+    // 16 a 39 anos
+    if (idadeNum >= 16 && idadeNum <= 39) {
 
         if (sexo == "M") {
             reajuste = 0.10;
