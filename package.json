@@ -1,0 +1,29 @@
+{
+  "name": "atividade-avaliativa-1-ppi",
+  "version": "1.0.0",
+  "description": "Aplicativo web para calcular o reajuste salarial",
+  "keywords": [
+    "http",
+    "atividade",
+    "avaliativa"
+  ],
+  "homepage": "https://github.com/Ianiky/Atividade-Avaliativa-1-PPI#readme",
+  "bugs": {
+    "url": "https://github.com/Ianiky/Atividade-Avaliativa-1-PPI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ianiky/Atividade-Avaliativa-1-PPI.git"
+  },
+  "license": "ISC",
+  "author": "Ianiky Lara",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
