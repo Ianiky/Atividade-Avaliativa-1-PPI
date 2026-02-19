@@ -75,7 +75,7 @@ server.get('/calculadora', (req, res) => {
     if (isNaN(idadeNum) || idadeNum < 16 || idadeNum > 99) {
     res.write(`
         <h1>Erro</h1>
-        <p>Idade inválida! Informe uma idade entre 18 e 99 anos.</p>
+        <p>Idade inválida! Informe uma idade entre 16 e 99 anos.</p>
     `);
     return res.end();
 }
